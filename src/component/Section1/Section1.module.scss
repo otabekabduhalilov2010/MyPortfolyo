@@ -1,0 +1,35 @@
+.wrap {
+ display: flex;
+ justify-content: space-between;
+
+
+    &::after {
+        content: "";
+        position: fixed;
+        width: 50%;
+        height: 100dvh;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        background-color: #000000;
+        box-shadow: inset 0 0 80px 10px rgba(0, 0, 0, 0.5);
+    }
+}
+
+
+.title {
+    margin-top: 200px;
+
+    b {
+        font-size: 50px ;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    p {
+        font-size: 40px;
+        color: gray;
+    }
+}

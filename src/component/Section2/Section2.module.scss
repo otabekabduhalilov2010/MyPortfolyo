@@ -1,0 +1,42 @@
+.section {
+    background-color: rgb(24, 22, 22);
+    color: #fff;
+    padding: 40px 0;
+    margin-top: 5px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .wrap {
+    text-align: left;
+    position: relative;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .text {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 20px 0;
+  }
+  
+  .readMore {
+    border-top: 1px solid #fff;
+    display: inline-block;
+    padding-top: 10px;
+  }
+  
+  .readMore a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  

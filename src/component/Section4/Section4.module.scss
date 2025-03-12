@@ -1,0 +1,49 @@
+.section {
+    padding: 60px 0;
+    text-align: center;
+    background: linear-gradient(to right, #f8f8f8, #eaeaea);
+  }
+  
+  .wrap {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  p {
+    font-size: 30px;
+    text-align: left;
+    padding-bottom: 50px;
+    font-weight: 900;
+    margin: 20px 0;
+  }
+  
+  .logo {
+    display: grid;
+    cursor: pointer;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .logo img {
+    width: 80px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .logo img:hover {
+    transform: scale(1.1);
+  }
+  
