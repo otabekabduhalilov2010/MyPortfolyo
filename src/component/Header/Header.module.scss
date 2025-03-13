@@ -1,14 +1,74 @@
 .nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 40px;
 }
 
-.menu {
+/* Десктопное и планшетное меню (от 768px) */
+.menuDesktop {
     display: flex;
     gap: 40px;
-    a{
+    color: white;
+
+    a {
         color: rgb(255, 255, 255);
-        text-decoration: none;}
+        text-decoration: none;
         cursor: pointer;
+
+        @media (max-width: 1020px) {
+            color: black;
+        }
+    }
+}
+
+/* Бургер-меню (изначально скрыто) */
+.burger {
+    display: none; /* Показываем только в мобильной версии */
+    cursor: pointer;
+}
+
+/* Мобильное меню (скрыто по умолчанию) */
+.menuMobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Активное состояние бургер-меню */
+.menuOpen {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Ссылки в бургер-меню */
+.menuMobile a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Адаптивные стили для мобильных устройств (до 768px) */
+@media (max-width: 768px) {
+    .menuDesktop {
+        display: none; /* Скрываем десктопное меню */
+    }
+
+    .burger {
+        display: block; /* Показываем бургер */
+    }
 }

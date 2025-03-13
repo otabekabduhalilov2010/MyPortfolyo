@@ -1,14 +1,66 @@
 .section {
+  padding: 60px 0;
+  text-align: center;
+  background: linear-gradient(to right, #f8f8f8, #eaeaea);
+}
+
+.wrap {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid black;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+p {
+  font-size: 30px;
+  text-align: left;
+  padding-bottom: 50px;
+  font-weight: 900;
+  margin: 20px 0;
+}
+
+.logo {
+  display: grid;
+  cursor: pointer;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.logo img {
+  width: 80px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+
+
+/* 📌 Десктоп (1024px и выше) – Без изменений */
+@media (min-width: 1024px) {
+  .section {
     padding: 60px 0;
     text-align: center;
     background: linear-gradient(to right, #f8f8f8, #eaeaea);
   }
-  
+
   .wrap {
     max-width: 800px;
     margin: 0 auto;
   }
-  
+
   h1 {
     font-size: 24px;
     font-weight: bold;
@@ -18,7 +70,7 @@
     text-transform: uppercase;
     letter-spacing: 2px;
   }
-  
+
   p {
     font-size: 30px;
     text-align: left;
@@ -26,7 +78,7 @@
     font-weight: 900;
     margin: 20px 0;
   }
-  
+
   .logo {
     display: grid;
     cursor: pointer;
@@ -36,14 +88,95 @@
     align-items: center;
     margin-top: 30px;
   }
-  
+
   .logo img {
     width: 80px;
     height: auto;
     transition: transform 0.3s ease-in-out;
   }
-  
+
   .logo img:hover {
     transform: scale(1.1);
   }
-  
+}
+
+/* 📌 Планшеты (768px – 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .wrap {
+    max-width: 700px;
+    padding: 0 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+    padding: 8px 16px;
+  }
+
+  p {
+    font-size: 24px;
+    padding-bottom: 40px;
+  }
+
+  .logo {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .logo img {
+    width: 70px;
+  }
+}
+
+/* 📌 Телефоны (480px – 768px) */
+@media (max-width: 768px) and (min-width: 480px) {
+  .wrap {
+    max-width: 90%;
+    padding: 0 15px;
+  }
+
+  h1 {
+    font-size: 20px;
+    padding: 6px 12px;
+  }
+
+  p {
+    font-size: 20px;
+    padding-bottom: 30px;
+  }
+
+  .logo {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .logo img {
+    width: 60px;
+  }
+}
+
+/* 📌 Маленькие телефоны (до 480px) */
+@media (max-width: 480px) {
+  .wrap {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  h1 {
+    font-size: 18px;
+    padding: 5px 10px;
+  }
+
+  p {
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
+
+  .logo {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .logo img {
+    width: 50px;
+  }
+}

@@ -1,42 +1,153 @@
-.section {
-    background-color: rgb(24, 22, 22);
+/* 📌 Десктоп (1024px и выше) – Без изменений */
+@media (min-width: 1024px) {
+  .section {
     color: #fff;
     padding: 40px 0;
     margin-top: 5px;
   }
-  
+
   .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
   }
-  
+
   .wrap {
     text-align: left;
     position: relative;
   }
-  
+
   .title {
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
   }
-  
+
   .text {
     font-size: 14px;
     line-height: 1.6;
     margin: 20px 0;
   }
-  
+
   .readMore {
     border-top: 1px solid #fff;
     display: inline-block;
     padding-top: 10px;
   }
-  
+
   .readMore a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
   }
-  
+}
+
+/* 📌 Планшеты (768px – 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .container {
+    max-width: 900px;
+    padding: 0 15px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .text {
+    font-size: 13px;
+  }
+
+  .readMore {
+    padding-top: 8px;
+  }
+}
+
+/* 📌 Телефоны (480px – 768px) */
+@media (max-width: 768px) and (min-width: 480px) {
+  .container {
+    max-width: 700px;
+    padding: 0 10px;
+  }
+
+  .title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .text {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .readMore {
+    padding-top: 6px;
+    text-align: center;
+  }
+}
+
+/* 📌 Маленькие телефоны (до 480px) */
+@media (max-width: 480px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .title {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .text {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .readMore {
+    padding-top: 5px;
+    text-align: center;
+  }
+}
+
+
+.section {
+  background-color: rgb(24, 22, 22);
+  color: #fff;
+  padding: 40px 0;
+  margin-top: 5px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.wrap {
+  text-align: left;
+  position: relative;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 20px 0;
+}
+
+.readMore {
+  border-top: 1px solid #fff;
+  display: inline-block;
+  padding-top: 10px;
+}
+
+.readMore a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+

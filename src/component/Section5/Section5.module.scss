@@ -1,72 +1,216 @@
-.section {
+/* 📌 Десктоп (1024px и выше) – Без изменений */
+@media (min-width: 1024px) {
+  .section {
     padding: 60px 0;
     text-align: center;
     background: linear-gradient(to right, #f8f8f8, #eaeaea);
   }
-  
+
   .wrap {
     max-width: 600px;
     margin: 0 auto;
   }
-  
+
   h1 {
     font-size: 24px;
-    font-weight: bold;
-    display: inline-block;
     padding: 10px 20px;
-    border: 2px solid black;
-    text-transform: uppercase;
-    letter-spacing: 2px;
   }
-  
+
   p {
     font-size: 16px;
     margin: 20px 0;
-    color: #666;
   }
-  
+
   .decor {
     width: 50px;
-    height: 2px;
-    background: black;
-    margin: 10px auto 30px;
   }
-  
-  .form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  input, textarea {
-    width: 100%;
-    padding: 10px;
+
+  input,
+  textarea {
     font-size: 14px;
-    border: none;
-    border-bottom: 2px solid black;
-    background: transparent;
-    outline: none;
   }
-  
+
   button {
-    padding: 10px;
     font-size: 14px;
-    font-weight: bold;
-    background: transparent;
-    border: 2px solid black;
-    cursor: pointer;
-    transition: all 0.3s;
   }
-  
-  button:hover {
-    background: black;
-    color: white;
-  }
-  
+
   .successMessage {
-    margin-top: 20px;
     font-size: 16px;
-    color: green;
-    font-weight: bold;
   }
-  
+}
+
+/* 📌 Планшеты (768px – 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .wrap {
+    max-width: 500px;
+  }
+
+  h1 {
+    font-size: 22px;
+    padding: 8px 16px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .decor {
+    width: 40px;
+  }
+
+  input,
+  textarea {
+    font-size: 13px;
+  }
+
+  button {
+    font-size: 13px;
+  }
+
+  .successMessage {
+    font-size: 15px;
+  }
+}
+
+/* 📌 Телефоны (480px – 768px) */
+@media (max-width: 768px) and (min-width: 480px) {
+  .wrap {
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 20px;
+    padding: 6px 12px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .decor {
+    width: 35px;
+  }
+
+  input,
+  textarea {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 12px;
+  }
+
+  .successMessage {
+    font-size: 14px;
+  }
+}
+
+/* 📌 Маленькие телефоны (до 480px) */
+@media (max-width: 480px) {
+  .wrap {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  h1 {
+    font-size: 18px;
+    padding: 5px 10px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .decor {
+    width: 30px;
+  }
+
+  input,
+  textarea {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .successMessage {
+    font-size: 13px;
+  }
+}
+
+
+.section {
+  padding: 60px 0;
+  text-align: center;
+  background: linear-gradient(to right, #f8f8f8, #eaeaea);
+}
+
+.wrap {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid black;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+p {
+  font-size: 16px;
+  margin: 20px 0;
+  color: #666;
+}
+
+.decor {
+  width: 50px;
+  height: 2px;
+  background: black;
+  margin: 10px auto 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-bottom: 2px solid black;
+  background: transparent;
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  background: transparent;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background: black;
+  color: white;
+}
+
+.successMessage {
+  margin-top: 20px;
+  font-size: 16px;
+  color: green;
+  font-weight: bold;
+}

@@ -1,25 +1,102 @@
 .section {
+  background-color: #f8f8f8;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid #000;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+.description {
+  font-size: 14px;
+  max-width: 600px;
+  margin: 20px auto;
+  color: #666;
+}
+
+.explore {
+  margin-top: 10px;
+  border-top: 1px solid #000;
+  padding-top: 10px;
+}
+
+.explore a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.service {
+  flex: 1;
+  text-align: center;
+  max-width: 300px;
+}
+
+.serviceTitle {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.serviceText {
+  font-size: 14px;
+  color: #666;
+}
+
+
+/* 📌 Десктоп (1024px и выше) – Без изменений */
+@media (min-width: 1024px) {
+  .section {
     background-color: #f8f8f8;
     padding: 60px 0;
     text-align: center;
   }
-  
+
   .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
   }
-  
+
   .wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
+
   .header {
     margin-bottom: 40px;
   }
-  
+
   .title {
     font-size: 24px;
     font-weight: bold;
@@ -28,47 +105,129 @@
     padding: 10px 20px;
     display: inline-block;
   }
-  
+
   .description {
     font-size: 14px;
     max-width: 600px;
     margin: 20px auto;
     color: #666;
   }
-  
+
   .explore {
     margin-top: 10px;
     border-top: 1px solid #000;
     padding-top: 10px;
   }
-  
+
   .explore a {
     font-weight: bold;
     text-decoration: none;
     color: #000;
   }
-  
+
   .services {
     display: flex;
     justify-content: space-between;
     gap: 20px;
   }
-  
+
   .service {
     flex: 1;
     text-align: center;
     max-width: 300px;
   }
-  
+
   .serviceTitle {
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 10px;
   }
-  
+
   .serviceText {
     font-size: 14px;
     color: #666;
   }
-  
+}
+
+/* 📌 Планшеты (768px – 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .container {
+    max-width: 900px;
+    padding: 0 15px;
+  }
+
+  .title {
+    font-size: 22px;
+    padding: 8px 16px;
+  }
+
+  .description {
+    font-size: 13px;
+    max-width: 500px;
+  }
+
+  .services {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .service {
+    max-width: 280px;
+  }
+}
+
+/* 📌 Телефоны (480px – 768px) */
+@media (max-width: 768px) and (min-width: 480px) {
+  .container {
+    max-width: 700px;
+    padding: 0 10px;
+  }
+
+  .title {
+    font-size: 20px;
+    padding: 6px 12px;
+  }
+
+  .description {
+    font-size: 12px;
+    max-width: 450px;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service {
+    max-width: 90%;
+  }
+}
+
+/* 📌 Маленькие телефоны (до 480px) */
+@media (max-width: 480px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .title {
+    font-size: 18px;
+    padding: 5px 10px;
+  }
+
+  .description {
+    font-size: 11px;
+    max-width: 100%;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service {
+    max-width: 100%;
+  }
+}

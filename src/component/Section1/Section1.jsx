@@ -60,6 +60,7 @@ const Section1 = () => {
 
           {/* Анимация появления фото */}
           <motion.img
+          className={s.img}
             src="./Otabek1.png"
             alt="Otabek"
             initial={{ opacity: 0, x: 50 }}
